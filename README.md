@@ -11,7 +11,7 @@ as ModelExceptionInterface and ModelException.
 ## Installation
 Using [packagist.org](https://packagist.org/packages/horat1us/yii2-validation-exception):
 ```bash
-composer require wearesho-team/yii2-validation-exception:^1.0
+composer require horat1us/yii2-validation-exception:^1.0
 ```
 
 ## Structure
