@@ -1,4 +1,5 @@
 # Yii2 UUID Behavior
+[![Test & Lint](https://github.com/Horat1us/yii2-validation-exception/actions/workflows/php.yml/badge.svg?branch=master)](https://github.com/Horat1us/yii2-validation-exception/actions/workflows/php.yml)
 [![codecov](https://codecov.io/gh/Horat1us/yii2-validation-exception/branch/master/graph/badge.svg)](https://codecov.io/gh/Horat1us/yii2-validation-exception)
 
 This package add additional methods and exception for model validation.  
