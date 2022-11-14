@@ -1,5 +1,4 @@
 # Yii2 UUID Behavior
-[![Build Status](https://travis-ci.org/Horat1us/yii2-validation-exception.svg?branch=master)](https://travis-ci.org/Horat1us/yii2-validation-exception)
 [![codecov](https://codecov.io/gh/Horat1us/yii2-validation-exception/branch/master/graph/badge.svg)](https://codecov.io/gh/Horat1us/yii2-validation-exception)
 
 This package add additional methods and exception for model validation.  
