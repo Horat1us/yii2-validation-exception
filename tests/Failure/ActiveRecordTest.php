@@ -49,7 +49,7 @@ class ActiveRecordTest extends TestCase
         /** @noinspection PhpUnhandledExceptionInspection */
         /** @var MockObject|Validation\Failure\Model $mock */
         $mock = $this->getMockBuilder(ActiveRecord::class)
-            ->setMethods(['save',])
+            ->onlyMethods(['save',])
             ->getMock();
 
         return $mock;

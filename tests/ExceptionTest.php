@@ -77,8 +77,7 @@ class ExceptionTest extends TestCase
     {
         /** @noinspection PhpUnhandledExceptionInspection */
         /** @var db\ActiveRecordInterface|MockObject $record */
-        $record = $this->getMockBuilder(db\ActiveRecordInterface::class)
-            ->getMockForAbstractClass();
+        $record = $this->createMock(db\ActiveRecordInterface::class);
 
         $record->expects($this->once())
             ->method('save')

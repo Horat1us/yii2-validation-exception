@@ -80,7 +80,7 @@ class ModelTest extends TestCase
         /** @noinspection PhpUnhandledExceptionInspection */
         /** @var MockObject|Validation\Failure\Model $mock */
         $mock = $this->getMockBuilder(ActiveRecord::class)
-            ->setMethods(['hasErrors', 'validate',])
+            ->onlyMethods(['hasErrors', 'validate',])
             ->getMock();
 
         return $mock;
