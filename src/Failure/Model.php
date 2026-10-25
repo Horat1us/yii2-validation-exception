@@ -37,7 +37,7 @@ trait Model
      * @see ModelInterface::checkOrFail() implementation
      * @throws Validation\Exception
      */
-    public function checkOrFail(string $attribute = null): void
+    public function checkOrFail(?string $attribute = null): void
     {
         if ($this->hasErrors($attribute)) {
             throw new Validation\Exception($this, 3);

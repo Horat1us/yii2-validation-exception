@@ -1,4 +1,4 @@
-# Yii2 UUID Behavior
+# Yii2 Validation Exception
 [![Test & Lint](https://github.com/Horat1us/yii2-validation-exception/actions/workflows/php.yml/badge.svg?branch=master)](https://github.com/Horat1us/yii2-validation-exception/actions/workflows/php.yml)
 [![codecov](https://codecov.io/gh/Horat1us/yii2-validation-exception/branch/master/graph/badge.svg)](https://codecov.io/gh/Horat1us/yii2-validation-exception)
 
@@ -7,6 +7,8 @@ Main purpose is to prevent mistakes while models validations (forgot to check va
 
 Previous implementation was available in [horat1us/yii2-base](https://github.com/Horat1us/yii2-base) package
 as ModelExceptionInterface and ModelException. 
+
+Compatibility: tested on PHP 8.4, PHP 8.5
 
 ## Installation
 Using [packagist.org](https://packagist.org/packages/horat1us/yii2-validation-exception):

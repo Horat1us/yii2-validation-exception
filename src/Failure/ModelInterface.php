@@ -25,7 +25,7 @@ interface ModelInterface
      *
      * @throws Validation\Failure
      */
-    public function validateOrFail(array $attributeNames = null, bool $clearErrors = true): void;
+    public function validateOrFail(?array $attributeNames = null, bool $clearErrors = true): void;
 
     /**
      * This method SHALL check for errors in model and throw failure exception if they present.
@@ -35,5 +35,5 @@ interface ModelInterface
      *
      * @throws Validation\Failure
      */
-    public function checkOrFail(string $attribute = null): void;
+    public function checkOrFail(?string $attribute = null): void;
 }

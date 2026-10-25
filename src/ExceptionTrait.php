@@ -18,7 +18,7 @@ trait ExceptionTrait
     /** @var base\Model */
     protected $model;
 
-    public function __construct(base\Model $model, int $code = 0, \Throwable $previous = null)
+    public function __construct(base\Model $model, int $code = 0, ?\Throwable $previous = null)
     {
         $message = get_class($model) . " validation errors";
         parent::__construct($message, $code, $previous);
@@ -36,7 +36,7 @@ trait ExceptionTrait
      */
     public static function validateOrThrow(
         base\Model $model,
-        array $attributeNames = null,
+        ?array $attributeNames = null,
         bool $cleanErrors = true
     ): base\Model {
         if (!$model->validate($attributeNames, $cleanErrors)) {
@@ -51,7 +51,7 @@ trait ExceptionTrait
      */
     public static function saveOrThrow(
         db\ActiveRecordInterface $record,
-        array $attributeNames = null
+        ?array $attributeNames = null
     ): db\ActiveRecordInterface {
         if (!$record->save(true, $attributeNames)) {
             if (!$record instanceof base\Model) {

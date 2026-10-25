@@ -21,5 +21,5 @@ interface ActiveRecordInterface extends ModelInterface
      * @param string[]|null $attributeNames
      * @throws Validation\Failure
      */
-    public function saveOrFail(array $attributeNames = null): void;
+    public function saveOrFail(?array $attributeNames = null): void;
 }
